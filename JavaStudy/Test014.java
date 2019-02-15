@@ -55,6 +55,7 @@ public class Test014
 		*/
 
 		//강사님 Version
+		//InputStreamReader 인스턴스 생성 + BufferedReader 인스턴스 생성
 		InputStreamReader isr = new InputStreamReader(System.in);
 		BufferedReader br = new BufferedReader(isr);
 
@@ -62,7 +63,48 @@ public class Test014
 		String strName;				//--이름 변수
 		int nKor,nEng,nMat,nTot;	//--국어,영어,수학,총점
 
+		//추가 변수 선언
+		String strTemp;
 
+		// 연산 및 처리
+		// 사용자에게 안내 메세지 출력 ( 이름 입력 안내)
+		System.out.print("이름을 입력하세요 : ");
+		
+		// 사용자가 입력한 값( 외부 데이터 )을 변수에 담아내기
+		strName = br.readLine();
+
+		// 사용자에게 안내 메세지 출력 ( 국어점수 입력 안내 )
+		System.out.print("국어 점수 입력 : ");
+
+		// 사용자가 입력한 값(외부 데이터)을 변수에 담아내기
+		strTemp = br.readLine();			//-- 문자열 임시 저장
+		nKor = Integer.parseInt(strTemp);	//-- 임시저장 데이터 형 변환 후 국어점수 변수에 담아내기
+		
+		// 사용자에게 안내 메세지 출력 ( 영어점수 입력 안내)
+		System.out.print("영어 점수 입력 : ");
+		strTemp = br.readLine();			//--문자열 임시 저장
+											//  (기존 국어점수에 덮어쓰기)
+		nEng = Integer.parseInt(strTemp);	//--임시저장 데이터 형 변환 후
+											//  영어점수 변수에 담아내기
+		// 사용자에게 안내 메세지 출력 ( 수학점수 입력 안내)
+		System.out.print("수학 점수 입력 : ");
+
+		// 사용자가 입력한 값(외부 데이터)을 변수에 담아내기
+		strTemp = br.readLine();			//--문자열 임시 저장
+											//  (기존 영어점수에 덮어쓰기)
+		nMat = Integer.parseInt(strTemp);	//--임시저장 데이터 형 변환 후
+											//  수학점수 변수에 담아내기
+		
+		// 입력된 데이터들을 종합하여 총점 산출하기
+		nTot = nKor + nEng + nMat;		
+		
+		// 결과 출력
+		//System.out.println();	//개행
+		System.out.println("\n===[결과]===");
+		System.out.println("이름 : "+strName);
+		System.out.println("총점 : "+nTot);
+		System.out.println("==============");
+		
 	}
 }
 
