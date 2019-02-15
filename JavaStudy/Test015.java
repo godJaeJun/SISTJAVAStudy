@@ -29,16 +29,33 @@ public class Test015
 	
 		// ○ 연산 및 처리
 		// 사용자에게 안내 메세지 출력
-		System.out.print("한 문자 입력 : ");
-		ch = (char)System.in.read();
-		System.in.read();
-		System.in.read();
+		System.out.print("한 문자 입력 : ");	// 'A' + Enter
+		//												------------- 
+		//												↓+←==\n+\r
 
+		// 사용자 입력값을 문자형으로 변환한 후 변수 ch 에 담아내기
+		ch = (char)System.in.read();	//65
+
+		// ※ 입력 대기열에 남아있는 『\r』과 『\n』을 스킵(건너뛰기, 버리기)
+		System.in.skip(2);
+		//-- 두 글자를 읽지 않고 건너뛴다. (버린다.)
+		
+		// 사용자에게 안내 메세지 출력
 		System.out.print("한 자리 정수 입력 : ");
-		n = System.in.read() - 48;
+		// 사용자 입력값을 변수 n 에 담아내기
+		n = System.in.read() - 48;	// ASCII 코드 값 0은 48 1은 49이므로... -48을 해준다.
 		
 		// ○ 결과 출력
 		System.out.println("\n>> 입력한 문자 : "+ch);
 		System.out.println(">> 입력한 정수 : "+n);
 	}
 }
+//실행 결과
+/*
+한 문자 입력 : G
+한 자리 정수 입력 : 7
+
+>> 입력한 문자 : G
+>> 입력한 정수 : 7
+계속하려면 아무 키나 누르십시오 . . .
+*/
