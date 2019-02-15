@@ -39,7 +39,7 @@ public class Test029
 
 		System.out.print("ÀÓÀÇÀÇ ¿¬µµ ÀÔ·Â : ");
 		year = Integer.parseInt(br.readLine());
-
+		// (year %4==0 && year%100!=0 || year%400==0)? "À±³â":"Æò³â";
 		n = year % 400 == 0 ? "À±³â" : year % 4 ==0 ? (year %100==0? "Æò³â" : "À±³â"): "Æò³â" ;
 		System.out.printf("%d³â -> %s\n",year,n);
 		
