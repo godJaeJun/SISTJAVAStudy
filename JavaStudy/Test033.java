@@ -40,8 +40,8 @@ import java.io.InputStreamReader;	//InputStreamReader를 가져온다.
 //Test033 클래스 생성
 public class Test033
 {	//메인 메소드							
-	public static void main(String[] args) throws IOException	//IOException 예외 처리
-	{		
+	public static void main(String[] args) throws IOException	//IOException 예외 처리 
+	{															//IOException은 BufferedReader의 readLine()이나 System.in.read()를 사용해 입력받을때 생기는 예외이다.
 			//BufferedReader인스턴스 생성
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
 			
@@ -73,5 +73,13 @@ public class Test033
 /*
 임의의 연도 입력 : 2012
 2012-> 윤년
+계속하려면 아무 키나 누르십시오 . . .
+
+임의의 연도 입력 : 1998
+1998-> 평년
+계속하려면 아무 키나 누르십시오 . . .
+
+임의의 연도 입력 : 2014
+2014-> 평년
 계속하려면 아무 키나 누르십시오 . . .
 */

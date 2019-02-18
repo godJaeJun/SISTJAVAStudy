@@ -26,24 +26,24 @@
 // 계속하려면 아무 키나 누르세요...
 
 import java.io.IOException;	//IOException을 불러온다.
-public class Test039
+public class Test039		//Test039클래스 생성
 {
-	public static void main(String[] args) throws IOException	//IOException 예외처리
+	public static void main(String[] args) throws IOException	//IOException 예외처리 System.in.read()를 사용할 것이기에 IOException예외처리를 해준다.
 	{
 		//정수형 변수를 선언한다. 문자를 입력받을 것이지만 ASCII코드로 비교할 것이므로...
 		int c;
 		//안내 메세지를 출력한다.
 		System.out.print("알파벳 한 문자 입력 : ");
-		//System.in.read로 ASCII코드 값을 읽어온다.
+		//System.in.read로 ASCII코드 값을 읽어온다. ASCII코드로 비교할 것이기 때문에
 		c = System.in.read();
 		
 		//65~90은 소문자이므로 32를 더해 대문자로 바꿔준다.
 		if(c>=65 && c<=90){
-			System.out.println(">> "+(char)(c+32));
+			System.out.println(">> "+(char)(c+32));	//출력 시 정수형으로 출력하지 않고 char형으로 출력할 것이기 때문에 (char)형으로 형변환 시켜준다.
 		}
 		else if(c>=97 && c<=122)	//97~122는 대문자이므로 32를 빼 소문자로 바꿔준다.
 		{
-			System.out.println(">> "+(char)(c-32));
+			System.out.println(">> "+(char)(c-32));	//출력 시 정수형으로 출력하지 않고 char형으로 출력할 것이기 때문에 (char)형으로 형변환 시켜준다.
 		}
 		else{						//그 외의 문자를 입력했을 경우 입력오류를 출력한다.
 			System.out.println(">> 입력 오류~!!!");
@@ -54,5 +54,13 @@ public class Test039
 /*
 알파벳 한 문자 입력 : A
 >> a
+계속하려면 아무 키나 누르십시오 . . .
+
+알파벳 한 문자 입력 : b
+>> B
+계속하려면 아무 키나 누르십시오 . . .
+
+알파벳 한 문자 입력 : 1
+>> 입력 오류~!!!
 계속하려면 아무 키나 누르십시오 . . .
 */
