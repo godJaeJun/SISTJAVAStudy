@@ -1,0 +1,47 @@
+/*==========================================================
+			■■■ 실행 흐름의 컨트롤 (제어문) ■■■
+					   - if ~ else문 실습
+==========================================================*/
+
+// ○ 실습 문제
+// 사용자로부터 임의의 정수를 입력받아
+// 입력받은 정수가 2의 배수인지, 3의 배수인지
+// 2와 3의 배수인지, 2와 3의 배수가 아닌지 판별하여
+// 결과를 출력하는 프로그램을 구현한다.
+
+// 실행 예)
+// 임의의 정수 입력 : 8
+// >>8 -> 2의 배수~!!!
+// 계속하려면 아무 키나 누르세요..
+
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Test035
+{
+	public static void main(String[] args) throws IOException
+	{	
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int num;
+		System.out.print("임의의 정수 입력 : ");
+		num = Integer.parseInt(br.readLine());
+
+		if ((num%2==0)&&(num%3==0))
+		{
+			System.out.println(">>"+num+" 2와 3의 배수입니다~!!!");
+		}
+		else if((num%2==0)||(num%3==0))
+		{
+			System.out.println(">>"+num+ ((num%3!=0)?" 2의 배수~!!!":" 3의 배수~!!!"));
+		}
+		else
+		{
+			System.out.println(">>"+num+" 2와 3의 배수가 아닙니다~!!!");
+		}
+	}
+}
+//실행결과
+/*
+
+*/

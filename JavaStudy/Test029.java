@@ -39,12 +39,11 @@ public class Test029
 
 		System.out.print("임의의 연도 입력 : ");
 		year = Integer.parseInt(br.readLine());
-		n= (year %4==0 && year%100!=0 || year%400==0)? "윤년":"평년";
+		n= (year%4==0 && year%100!=0 || year%400==0)? "윤년":"평년";
 		System.out.printf("%d년 -> %s\n",year,n);
-		
 	}
 }
-//실행결과
+// 실행결과
 /*
 임의의 연도 입력 : 2011
 2011년 -> 평년
