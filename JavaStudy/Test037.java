@@ -55,7 +55,7 @@ public class Test037
 		System.out.printf("\n>> 정렬 결과 : %d %d %d\n",a,b,c);
 	}
 }
-//실행결과
+//실행결과aa
 /*
 첫 번째 정수 입력 : 1030
 두 번째 정수 입력 : 101
