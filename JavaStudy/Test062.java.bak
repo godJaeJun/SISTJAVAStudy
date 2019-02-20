@@ -46,6 +46,14 @@ public class Test062
 			}
 			System.out.println();				//별을 찍어둔 후 개행을 한다.
 		}
+
+		for(int i=0;i<5;i++){
+			for(int j=0;j<(9-i);j++){
+				System.out.print(j<i?" ":"*");
+			}
+
+		System.out.println();	
+		}
 	}
 }
 //실행 결과
