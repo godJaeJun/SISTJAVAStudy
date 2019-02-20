@@ -19,7 +19,7 @@
 // 1부터 9까지의 정수만 입력 가능합니다.
 // 계속하려면 아무 키나...
 import java.io.BufferedReader;			//java.io에서 BufferedReader가져옴
-import java.io.InputStreamReader;		//java.io에서 InputStreamReader가져옴
+import java.io.InputStreamReader;		//java.io에서 InputStreamReader0가져옴
 import java.io.IOException;				//java.io에서 IOException가져옴
 public class Test053					//Test053클래스 생성
 {	
