@@ -7,8 +7,8 @@ public class Test065
 	public static void main(String[] args)
 	{
 	
-	}
-}
+	}// end Main
+}//end Class
 //실행결과
 /*
 
