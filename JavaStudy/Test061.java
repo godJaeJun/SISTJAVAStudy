@@ -26,6 +26,7 @@ public class Test061
 			}
 			System.out.println();		// 한줄을 찍어주고 개행을 처리한다.
 		}
+
 		
 		//while로 짠 별찍기
 		/*
