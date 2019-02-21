@@ -15,6 +15,7 @@
 99:2500
 °á°ú : 2500
 */
+
 public class Test065
 {
 	public static void main(String[] args)
