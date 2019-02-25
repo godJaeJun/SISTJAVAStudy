@@ -31,9 +31,15 @@ class NumberTest
 	}*/
 	
 	// 사용자 정의 생성자
+<<<<<<< HEAD
 	NumberTest()
 	{
 		num=10;
+=======
+	NumberTest(int num)
+	{
+		this.num=num;
+>>>>>>> 6f330bb31b75117989f2e6c456df68b71957ddd5
 		System.out.println("사용자 정의 생성자 호출~!!!");
 	}
 
@@ -52,6 +58,7 @@ public class Test074
 	public static void main(String[] args)
 	{
 		//NumberTest클래스 기반 인스턴스 생성
+<<<<<<< HEAD
 		NumberTest nt1 = new NumberTest();
 		//-- 인스턴스가 생성되는 시점에서
 		//   이와 동시에 생섲아 호출이 이루어진다.
@@ -87,3 +94,11 @@ public class Test074
 10
 계속하려면 아무 키나 누르십시오 . . .
 */
+=======
+		NumberTest nt1 = new NumberTest(10);
+	
+		System.out.println(nt1.getNum());
+	}
+
+}
+>>>>>>> 6f330bb31b75117989f2e6c456df68b71957ddd5
