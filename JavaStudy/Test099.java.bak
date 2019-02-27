@@ -39,13 +39,13 @@ public class Test099
 				bb=true;
 			}
 		}
+		
 		System.out.print("두 번째 배열 요소를 입력하세요(공백 구분) : ");
 		for(i=0;i<b.length;i++)
 		{
 			b[i] = sc.nextInt();
 		}
 		
-
 		temp = (int[])b.clone();
 
 		for(i=0;i<a.length;i++)
@@ -58,8 +58,6 @@ public class Test099
 				}
 			}
 		}
-
-		// 출력
 		for(i=0;i<a.length;i++)
 		{
 			System.out.print(a[i]+ " ");
