@@ -35,7 +35,6 @@ public class Test031
 {
 	public static void main(String[] args) throws IOException
 	{
-		//³» Version
 		/*
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String name;
