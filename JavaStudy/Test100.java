@@ -84,7 +84,6 @@ public class Test100
 		// 배열 선언 및 초기화
 		// 각 달이 담고있는 마지막 날짜(매 월의 최대 날짜)
 		int[] days = {31,28,31,30,31,30,31,31,30,31,30,31};
-
 		// 확인
 		//System.out.println(days.length);
 
