@@ -107,7 +107,7 @@ class BClass extends AClass
 
 	public double calc()
 	{
-		double result=0;
+		double result=0; 
 
 		switch(op)
 		{
