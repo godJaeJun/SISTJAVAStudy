@@ -133,10 +133,10 @@ public class Test116
 		
 		Sungjuk ob;										
 
-		ob = new SungjuckImpl();						// 업 캐스팅 수행
+		ob = new SungjuckImpl();						// 업 캐스팅 수행(Sungjuck인터페이스가 SungjuckImpl의 상위이기 때문에)
 	
-		ob.set();
-		ob.input();
+		ob.set();										// 다운 캐스팅을 안해도 되는것이 이미set input print가 정의되어 있다.
+		ob.input();										// 만약 정의되어있지 않은 메소드를 사용할때는 다운캐스팅을 수행한다.
 		ob.print();
 	}
 }
