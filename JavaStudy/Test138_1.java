@@ -52,7 +52,7 @@ public class Test138_1
 		System.out.println("=====================================");
 		for(i=1;i<w;i++)
 			System.out.print("    ");	//공백 4칸
-		
+
 		// Calendar 클래스의 『getActualMaximum()』 메소드 check~!!!
 		for(i=1;i<=cal.getActualMaximum(Calendar.DATE);i++)
 		{

@@ -44,7 +44,6 @@ class Lotto
 		int cnt = 0;
 		Random rd = new Random();
 		int n;
-		
 		jump:
 		while (cnt<6)	// cnt -> 0 1 2 3 4 5
 		{
