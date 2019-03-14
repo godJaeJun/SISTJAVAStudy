@@ -18,7 +18,7 @@ public class Test166
 			ch = (char)data;
 			
 			// print() : 문자 스트림
-			System.out.print(ch);
+			//System.out.print(ch);
 			//--==>> 문자열 입력(종료:Ctrl+z)
 			//		 abcd
 			//		 abcd
@@ -26,6 +26,11 @@ public class Test166
 			//		 1234
 			//		 가나다라
 			//		 °¡³ª´?¶?
+			//write() : OutputStream 클래스의 대표적 메소드 (-> 바이트 스트림)
+			System.out.write(ch);
+			//--==>> 문자열 입력(종료:Ctrl+z)
+			//		 가나다라
+			//		 가나다라
 		}
 	}
 }
