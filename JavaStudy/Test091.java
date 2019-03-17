@@ -31,7 +31,8 @@ import java.util.Scanner;
 class WeekDay
 {
 	// 주요 변수 선언(속성 구성)
-	private int y, m, d;	//-- 사용자가 입력한 년, 월, 일을 담을 변수
+	private int y, m, d;	
+	//-- 사용자가 입력한 년, 월, 일을 담을 변수
 
 	// 메소드 정의(입력받기)
 	void input()
@@ -46,7 +47,8 @@ class WeekDay
 	//메소드 정의(요일 산출하기)
 	String week()
 	{
-		int b=d;	//일의 합
+		int b=d;	
+		//일의 합
 		String[] dd = {"일요일","월요일","화요일","수요일","목요일","금요일","토요일"};	
 		int[] aa = {31,28,31,30,31,30,31,31,30,31,30,31};
 		

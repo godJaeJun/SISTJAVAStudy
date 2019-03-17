@@ -23,6 +23,25 @@ public class Test050
 {
 	public static void main(String[] args) throws IOException
 	{
+		/*
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int a;
+		System.out.print("임의의 정수 입력 : ");
+		a = Integer.parseInt(br.readLine());
+
+		int j = 2;
+		while(j<=(a-1)||(j-a==1)){ 
+			if((a%j)==0||a==1)
+			{
+				System.out.println(a + " -> 소수아님");
+				return;
+			}
+			else{
+				j++;
+			}
+		}
+		System.out.println(a + " -> 소수");
+		*/
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		//주요 변수 선언 및 초기화
@@ -47,7 +66,7 @@ public class Test050
 		}
 		
 		// 결과 출력 ( 출력 전에 수행해야 할 추가 확인 -> 1인지 여부에 대한 확인)
-		// 소수다 && 1이 아니다.
+		// 소수  다 && 1이 아니다.
 		// -> 최종적인 결론으로 소수다.
 		// 그렇지 않으면
 		// -> 최종적인 결론으로 소수 아니다.

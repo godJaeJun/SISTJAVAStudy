@@ -27,6 +27,57 @@ public class Test100
 {
 	public static void main(String[] args) throws IOException
 	{
+		/*
+		// 주요 변수 선언
+		Scanner sc = new Scanner(System.in);
+		int year,month;
+		int nalsu=1;
+		int[] aa = {31,28,31,30,31,30,31,31,30,31,30,31};
+		int cnt=0;
+
+		// 안내메세지와 연도와 월 입력받기
+		System.out.print("『연도』를 입력하세요 : ");
+		year = sc.nextInt();
+		System.out.print("『월』을 입력하세요   : ");
+		month = sc.nextInt();
+		
+		// 윤년 구분하기
+		if(year%4==0&&year%100!=0||year%400==0)
+		{
+			aa[1] = 29;
+		}
+		else
+		{
+			aa[1] = 28;
+		}
+		
+		// 입력받은달 전년까지의 합 구해서 더해준다.
+		nalsu += (year-1)*365 + (year-1)/4 - (year-1)/100 + (year-1)/400;
+		
+		// 입력받은달 전달까지의 합 구해서 더해준다.
+		for(int i=0;i<(month-1);i++)
+			nalsu += aa[i];
+	
+		System.out.printf("\n\t\t[ %d년 %d월 ]\n",year,month);
+		System.out.println("\n일\t월\t화\t수\t목\t금\t토");
+		System.out.println("=================================================");	
+		
+		for(int j=0;j<nalsu%7;j++)
+		{
+			System.out.printf("  \t");
+				cnt++;
+		}
+
+		for(int i=1;i<=aa[month-1];i++)
+		{
+			System.out.printf("%2d\t",i);
+			cnt++;
+			// 한줄출력 공백
+			if(cnt%7==0)
+				System.out.println();
+		}
+		System.out.println("\n=================================================");
+		*/
 		// BuffreredReader 클래스 인스턴스 생성
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -106,8 +157,7 @@ public class Test100
 		for (int i=1; i<=days[m-1];i++)
 		{
 			System.out.printf("%4d",i);
-			w++;						
-			//-- 날짜가 증가하는 만큼 요일도 함께 증가할 수 있도록 처리
+			w++;						//-- 날짜가 증가하는 만큼 요일도 함께 증가할 수 있도록 처리
 			if(w%7==0)//일요일
 			{
 				System.out.println();	// 개행

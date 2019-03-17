@@ -19,6 +19,7 @@ public class Test103
 	public static void main(String[] args)
 	{
 		int[] a = {52, 42, 12, 62, 60};
+		boolean flag = false;
 		/*
 			42, 52, 12, 62, 60	0 1
 			======
